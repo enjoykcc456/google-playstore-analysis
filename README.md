@@ -5,30 +5,6 @@ Google Play Store or formerly Android Market, is a digital distribution service 
 
 The dataset that is going to be used is 'Google Play Store Apps' from Kaggle. It contains 10k of web scraped Play Store apps data for analysing the Android market. The tools that are going to be used for this EDA would be numpy, pandas, matplotlib and seaborn which I have learnt from [the course](http://zerotopandas.com). 
 
-
-```python
-project_name = "google-play-store-eda"
-```
-
-
-```python
-!pip install jovian --upgrade -q
-```
-
-    [33mWARNING: You are using pip version 20.2.2; however, version 20.2.3 is available.
-    You should consider upgrading via the '/opt/conda/bin/python3.7 -m pip install --upgrade pip' command.[0m
-
-
-
-```python
-import jovian
-```
-
-
-```python
-jovian.commit(project=project_name)
-```
-
 ## Data Preparation and Cleaning
 
 In this section, we will be loading the Google Store Apps data stored in csv using pandas which is a fast and powerful python library for data analysis and easy data manipulation in pandas DataFrame object. It is usually used for working with tabular data (e.g data in spreadsheet) in various formats such as CSV, Excel spreadsheets, HTML tables, JSON etc. We will then perform some data preparation and also cleaning on it.
@@ -74,19 +50,6 @@ apps_df.head(10)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -283,19 +246,6 @@ apps_df.sample(10)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -606,7 +556,7 @@ apps_df['Genres'].unique()
 
 
 ```python
-# look that the info of the dataframe
+# look at the info of the dataframe
 apps_df.info()
 ```
 
@@ -746,19 +696,6 @@ apps_df.sample(10)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1038,19 +975,6 @@ apps_df
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1264,19 +1188,6 @@ apps_df.describe()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1356,29 +1267,6 @@ apps_df.describe()
   </tbody>
 </table>
 </div>
-
-
-
-
-```python
-import jovian
-jovian.commit(project=project_name)
-```
-
-
-    <IPython.core.display.Javascript object>
-
-
-    [jovian] Attempting to save notebook..[0m
-    [jovian] Detected Kaggle notebook...[0m
-    [jovian] Please enter your API key ( from https://jovian.ml/ ):[0m
-    API KEY: ········
-    [jovian] Uploading notebook to https://jovian.ml/enjoy-kcc/google-play-store-eda[0m
-
-
-
-    <IPython.core.display.Javascript object>
-
 
 ## Exploratory Analysis and Visualization
 
@@ -1542,19 +1430,6 @@ apps_df.corr()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1623,27 +1498,7 @@ plt.show()
 
     
 ![png](google-play-store-eda_files/google-play-store-eda_49_0.png)
-    
-
-
-
-```python
-import jovian
-jovian.commit(project=project_name)
-```
-
-
-    <IPython.core.display.Javascript object>
-
-
-    [jovian] Attempting to save notebook..[0m
-    [jovian] Detected Kaggle notebook...[0m
-    [jovian] Uploading notebook to https://jovian.ml/enjoy-kcc/google-play-store-eda[0m
-
-
-
-    <IPython.core.display.Javascript object>
-
+ 
 
 ## Asking and Answering Questions
 
@@ -1659,19 +1514,6 @@ df.head(5)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1798,19 +1640,6 @@ df.head(5)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1882,19 +1711,6 @@ df.head(5)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2021,19 +1837,6 @@ df.head(3)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2128,19 +1931,6 @@ df.head(5)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2255,25 +2045,6 @@ print(f'The 5 apps from the FAMILY category having the lowest rating are: {", ".
     The 5 apps from the FAMILY category having the lowest rating are: FE Mechanical Engineering Prep, Truck Driving Test Class 3 BC, Speech Therapy: F, AC REMOTE UNIVERSAL-PRO, BG TV App
 
 
-
-```python
-import jovian
-jovian.commit(project=project_name)
-```
-
-
-    <IPython.core.display.Javascript object>
-
-
-    [jovian] Attempting to save notebook..[0m
-    [jovian] Detected Kaggle notebook...[0m
-    [jovian] Uploading notebook to https://jovian.ml/enjoy-kcc/google-play-store-eda[0m
-
-
-
-    <IPython.core.display.Javascript object>
-
-
 ## Inferences and Conclusion
 
 The Google Play Store Apps report provides some useful insights regarding the trending of the apps in the play store. As per the graphs visualizations shown above, most of the trending apps (in terms of users' installs) are from the categories like GAME, COMMUNICATION, and TOOL even though the amount of available apps from these categories are twice as much lesser than the category FAMILY. The trending of these apps are most probably due to their nature of being able to entertain or assist the user. Besides, it also shows a good trend where we can see that developers from these categories are focusing on the quality instead of the quantity of the apps.
@@ -2281,22 +2052,3 @@ The Google Play Store Apps report provides some useful insights regarding the tr
 Other than that, the charts shown above actually implies that most of the apps having good ratings of above 4.0 are mostly confirmed to have high amount of reviews and user installs. There are some spikes in term of size and price but it shouldn't reflect that apps with high rating are mostly big in size and pricy as by looking at the graphs they are most probably are due to some minority. Futhermore, most of the apps that are having high amount of reviews are from the categories of SOCIAL, COMMUNICATION and GAME like Facebook, WhatsApp Messenger, Instagram, Messenger – Text and Video Chat for Free, Clash of Clans etc. 
 
 Eventhough apps from the categories like GAME, SOCIAL, COMMUNICATION and TOOL of having the highest amount of installs, rating and reviews are reflecting the current trend of Android users, they are not even appearing as category in the top 5 most expensive apps in the store (which are mostly from FINANCE and LIFESTYLE). As a conclsuion, we learnt that the current trend in the Android market are mostly from these categories which either assisting, communicating or entertaining apps. 
-
-
-```python
-import jovian
-jovian.commit(project=project_name)
-```
-
-
-    <IPython.core.display.Javascript object>
-
-
-    [jovian] Attempting to save notebook..[0m
-    [jovian] Detected Kaggle notebook...[0m
-    [jovian] Uploading notebook to https://jovian.ml/enjoy-kcc/google-play-store-eda[0m
-
-
-
-    <IPython.core.display.Javascript object>
-
